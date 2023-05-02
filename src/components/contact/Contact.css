@@ -1,0 +1,159 @@
+.footer {
+  background-color: #bdc3c7cc;
+  height: 12vh;
+}
+
+.contact-section {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: #bdc3c7cc;
+  padding: 15px 30px 15px 15px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.87)),
+    url(../images/pexels-henry-&-co-1939485.jpg) 50% no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+}
+.form {
+  width: 558px;
+  height: 371px;
+  margin: 50px 50px;
+}
+.form-body {
+  display: flex;
+
+  background-size: cover;
+  background-position: top;
+  width: 1020px;
+}
+.contact-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 45px;
+  color: #25303c;
+  letter-spacing: 2px;
+}
+
+/*FORM */
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+/* .form__label{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display:inline-block;
+  transition: all .3s;
+} */
+.form__input {
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  color: rgb(43, 61, 79);
+  background-color: transparent;
+  border: 2px solid rgb(223, 218, 218);
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem;
+  border-bottom: 3px solid rgb(223, 218, 218);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid rgb(223, 218, 218);
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.btn-form {
+  font-size: 1.5rem;
+  padding: 5px 5px;
+  color: rgb(223, 218, 218);
+  border-radius: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(223, 218, 218);
+  border-bottom: 3px solid rgb(223, 218, 218);
+  display: block;
+  transition: all 0.3s;
+}
+
+.btn-form:hover {
+  outline: 3px solid;
+  transform: scale(1.05);
+}
+
+.footer-icon-classified {
+  width: 50px;
+}
+
+.footer-icons {
+  display: inline-block;
+  padding: 25px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-end {
+  border-top: 3px solid #2b3d4f;
+  margin-top: 35px;
+}
+
+.footer-icon-classified:hover {
+  outline: 3px solid transparent;
+  transform: scale(1.2);
+}
+/* 
+
+background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 65%, transparent 65%),url(../img/nat-10.jpg);
+    background-size: cover;
+} */
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 1024px) {
+  .form {
+    width: 400px;
+    height: 371px;
+    margin: 100px 200px 50px 300px;
+  }
+
+  .contact-section {
+    height: 70vh;
+  }
+
+  .footer-end {
+    border-top: 3px solid #2b3d4f;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    height: 700px;
+  }
+
+  .footer {
+    background-color: #bdc3c7cc;
+    height: 130px;
+  }
+}
